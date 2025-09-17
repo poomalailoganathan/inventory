@@ -142,7 +142,7 @@ export default function InventoryOverview() {
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap">
                       <div className={`flex items-center space-x-1 ${transaction.type === 'in' ? 'text-green-600' : 'text-red-600'}`}>
-                        {transaction.type === 'in' ? <ArrowUp className="h-4 w-4" /> : <ArrowDown className="h-4 w-4" />}
+                        {transaction.type === 'in' ? <ArrowDown className="h-4 w-4" /> : <ArrowUp className="h-4 w-4" />}
                         <span className="text-sm font-medium">{transaction.type === 'in' ? 'IN' : 'OUT'}</span>
                       </div>
                     </td>
